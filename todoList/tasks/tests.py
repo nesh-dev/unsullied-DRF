@@ -8,15 +8,17 @@ from .models import Todo
 from .serializers import TodoSerializer
 
 
-
+# create BaseTest to inherit from
 class BaseViewTest(APITestCase):
     client = APIClient()
 
+    # method to create each task
     @staticmethod
     def create_task(title="", description="", done=False):
         if title != "" and description != "":
             Todo.objects.create(title=title, description=description, done=False)
 
+    # create a number of tasks to use
     def setUp(self):
         self.create_task("skydive", "go to sagana and skydive")
         self.create_task("Hike", "hike in the Himalayas")
@@ -36,14 +38,17 @@ class GetAllTodo(BaseViewTest):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
 
+# handle single requests
 class GetSingletask(BaseViewTest):
 
+    # method to get specific item by id
     def get_task(self, pk):
         return self.client.get(
             reverse("todo", kwargs={
                 "pk": pk
             }))
 
+    # test single item
     def test_get_single(self):
 
         response = self.get_task(1)
