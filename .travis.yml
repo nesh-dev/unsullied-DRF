@@ -22,8 +22,6 @@ script:
   - python todoList/manage.py makemigrations
   - python todoList/manage.py migrate
   - python todoList/manage.py test
-  - pytest
-  - pytest --cov=todoList/
 
 # Generate coverage report
 after_success:
