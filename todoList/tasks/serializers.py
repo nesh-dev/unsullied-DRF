@@ -5,4 +5,4 @@ class TodoSerializer(serializers.ModelSerializer):
     description = serializers.CharField(required=False)
     class Meta:
         model = Todo
-        fields = ('id', 'title', 'description')
+        fields = ('id', 'title', 'description','done')
