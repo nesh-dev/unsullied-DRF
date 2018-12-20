@@ -29,13 +29,7 @@ class TodolistTest(APITestCase):
         response =self.client.post(reverse('todos'),self.data,format="json")
         self.assertEqual(201,response.status_code)
 
-    # def test_can_get_all_tasks(self):
-    #     """Test if api can get the task list"""
-    #     todos = Todo.objects.all()
-    #     response  = self.client.get(self.url)
-    #     self.assertEqual(200,response.status_code)
 
-    #     serialized_data =TodoSerializer(todos,)
 
 class BaseViewTest(APITestCase):
     client = APIClient()
@@ -67,10 +61,10 @@ class GetAllTodo(BaseViewTest):
 class GetSingletask(BaseViewTest):
 
     def get_task(self, pk):
-        self.client.get(
-            "todo", kwargs={
+        return self.client.get(reverse("todo", kwargs={
                 "pk": pk
-            }
+            })
+            
         )
 
     def test_get_single(self):
@@ -79,7 +73,7 @@ class GetSingletask(BaseViewTest):
         task = Todo.objects.get(pk=1)
         expected = task.title
         self.assertEqual(expected, "skydive")
-        self.assertEqual(200,response.status_code)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
 
 
