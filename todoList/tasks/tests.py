@@ -62,8 +62,6 @@ class GetSingletask(BaseViewTest):
         return self.client.get(reverse("todo", kwargs={
                 "pk": pk
             }))
-            
-
 
     def test_get_single(self):
 
@@ -72,7 +70,20 @@ class GetSingletask(BaseViewTest):
         expected = task.title
         self.assertEqual(expected, "skydive")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+    
+    def test_update_single(self):
+        self.data = {'title':'Watch Documentary'}
+        response = self.client.put(reverse("todo", kwargs={
+            "pk":1
+        }), self.data,format="json")
+    
+        self.assertEqual(200, response.status_code)
 
+    def test_delete_single(self):
+        response = self.client.delete(reverse("todo", kwargs={
+            "pk":1
+        }))
+        self.assertEqual(204, response.status_code)
 
 
 
