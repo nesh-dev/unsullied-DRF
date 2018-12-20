@@ -12,4 +12,5 @@ Team Members
    3. Sly
    4. Kelvin
    5. Allan
+   6. Sammy
 ```
