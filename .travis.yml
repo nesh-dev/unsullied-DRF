@@ -20,7 +20,8 @@ install:
 script:
   - python todoList/manage.py makemigrations
   - python todoList/manage.py migrate
-  - python todoList/manage.py test
+  - cd todoList
+  - python manage.py test
 
 # Generate coverage report
 after_success:
