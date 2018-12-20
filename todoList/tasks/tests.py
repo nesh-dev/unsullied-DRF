@@ -1,5 +1,4 @@
 # django imports
-from django.test import TestCase
 from django.urls import reverse
 from rest_framework.test import APITestCase, APIClient
 from rest_framework.views import status
@@ -8,8 +7,6 @@ from rest_framework.views import status
 from .models import Todo
 from .serializers import TodoSerializer
 
-
-# Create your tests here.
 
 
 class BaseViewTest(APITestCase):
@@ -42,11 +39,10 @@ class GetAllTodo(BaseViewTest):
 class GetSingletask(BaseViewTest):
 
     def get_task(self, pk):
-        self.client.get(
-            "todo", kwargs={
+        return self.client.get(
+            reverse("todo", kwargs={
                 "pk": pk
-            }
-        )
+            }))
 
     def test_get_single(self):
 
