@@ -19,9 +19,9 @@ install:
 
 # Run tests
 script:
-  - python todolist/manage.py makemigrations
-  - python todolist/manage.py migrate
-  - python todolist/manage.py test api
+  - python todoList/manage.py makemigrations
+  - python todoList/manage.py migrate
+  - python todoList/manage.py test api
   - pytest
   - pytest --cov=todoList/
 
