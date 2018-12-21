@@ -52,11 +52,9 @@ This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO li
 ```
 
 ### Team Members
-```
-   1. [Kwanj](https://pages.github.com/kwanj-k).
-   2. [Nesh](https://pages.github.com/nesh-dev).
-   3. [Sly](https://pages.github.com/sylviawanjiku).
-   4. [Kelvin](https://pages.github.com/kelvinwm).
-   5. [Allan](https://pages.github.com/Allan690).
-   6. [Sammy](https://pages.github.com/mbugwasami).
-```
+[Kwanj](https://pages.github.com/kwanj-k).
+[Nesh](https://pages.github.com/nesh-dev).
+[Sly](https://pages.github.com/sylviawanjiku).
+[Kelvin](https://pages.github.com/kelvinwm).
+[Allan](https://pages.github.com/Allan690).
+[Sammy](https://pages.github.com/mbugwasami).
