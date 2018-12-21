@@ -12,7 +12,22 @@ This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO li
 |UPDATE/Edit existing task | This endpoint edits an existing task in the TODO list |
 |DELETE/Drop an existing task | This endpoint deletes and existing task from the TODO list |
 
-
+### How to run the application
+- Download the application
+```Open the terminal
+   git clone https://github.com/nesh-dev/unsullied-DRF.git
+```
+- configure the application and dependancies
+```cd unsullied-DRF
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+  python manage.py makemigrations
+  python manage.py migrate
+  ```
+- Run the application
+```python manage.py runserver
+```
 
 Team Members
 ======
