@@ -3,6 +3,15 @@
 # Unsullied TODO list
 This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO list is a django REST api that performs simple CRUD operations on a TODO list.The application allows users to add to a list of things they want to do,Edit existing things they want to do, Delete some of the task they had listed to do and mark done the things they have done on the lists.
 
+### The minimum required endpoint are
+| Endpoint | Description |
+| --- | --- |
+| POST/Add to the list | This endpoint adds a new task to the TODO list |
+|GET/List all tasks | This endpoint lists all tasks in the TODO list|
+|GET/List single task | This endpoint lists a single task in the TODO list |
+|UPDATE/Edit existing task | This endpoint edits an existing task in the TODO list |
+|DELETE/Drop an existing task | This endpoint deletes and existing task from the TODO list |
+
 
 
 Team Members
