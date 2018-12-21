@@ -28,14 +28,31 @@ This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO li
 - Run the application
 ```python manage.py runserver
 ```
+### How to run the tests
+- Download the application
+```Open the terminal
+   git clone https://github.com/nesh-dev/unsullied-DRF.git
+```
+- configure the application and dependancies
+```
+  cd unsullied-DRF
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+  python manage.py makemigrations
+  python manage.py migrate
+  ```
+- Run the application
+```python manage.py tests
+```
 
-Team Members
+##Team Members
 ======
 ```
-   1. Kwanj
-   2. Nesh
-   3. Sly
-   4. Kelvin
-   5. Allan
-   6. Sammy
+   1. [Kwanj](https://pages.github.com/kwanj-k).
+   2. [Nesh](https://pages.github.com/nesh-dev).
+   3. [Sly](https://pages.github.com/sylviawanjiku).
+   4. [Kelvin](https://pages.github.com/kelvinwm).
+   5. [Allan](https://pages.github.com/Allan690).
+   6. [Sammy](https://pages.github.com/mbugwasami).
 ```
