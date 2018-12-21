@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/nesh-dev/unsullied-DRF.svg?branch=develop)](https://travis-ci.org/nesh-dev/unsullied-DRF)
 
 # Unsullied TODO list
-This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO list is a django REST api that performs simple CRUD operations on a TODO list.The application allows users to add to a list of things they want to do,Edit existing things they want to do, Delete some of the task they had listed to do and mark done the things they have done on the lists.
+This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO list is a django REST api that performs simple CRUD operations on a TODO list.The application allows users to add to a list of things they want to do,Edit existing things they want to do, Delete some of the task they had listed to do and mark done the things they have done on the list.
 
 ### The minimum required endpoint are
 | Endpoint | Description |
@@ -14,23 +14,8 @@ This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO li
 
 ### How to run the application
 - Download the application
-```Open the terminal
-   git clone https://github.com/nesh-dev/unsullied-DRF.git
 ```
-- configure the application and dependancies
-```cd unsullied-DRF
-  python3 -m venv venv
-  source venv/bin/activate
-  pip install -r requirements.txt
-  python manage.py makemigrations
-  python manage.py migrate
-  ```
-- Run the application
-```python manage.py runserver
-```
-### How to run the tests
-- Download the application
-```Open the terminal
+   Open the terminal
    git clone https://github.com/nesh-dev/unsullied-DRF.git
 ```
 - configure the application and dependancies
@@ -43,11 +28,30 @@ This repository contains Api endpoints for Unsullied TODO list.Unsullied TODO li
   python manage.py migrate
   ```
 - Run the application
-```python manage.py tests
+```
+   python manage.py runserver
+```
+### How to run the tests
+- Download the application
+```
+   Open the terminal
+   git clone https://github.com/nesh-dev/unsullied-DRF.git
+```
+- configure the application and dependancies
+```
+  cd unsullied-DRF
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+  python manage.py makemigrations
+  python manage.py migrate
+  ```
+- Run the application
+```
+   python manage.py tests
 ```
 
-##Team Members
-======
+### Team Members
 ```
    1. [Kwanj](https://pages.github.com/kwanj-k).
    2. [Nesh](https://pages.github.com/nesh-dev).
